@@ -1,0 +1,105 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Formulario de Encuesta</title>
+</head>
+
+<body>
+  <main id="main">
+    <h1 id="title">Formulario de Encuesta - FreeCodeCamp</h1>
+    <p id="description">Encuesta de Ejemplo FreeCodeCamp</p>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">
+        Nombre
+      </label>
+      <input type="text" id="name" placeholder="Introduzca su nombre" required>
+      <br>
+      <label for="email" id="email-label">
+        Email
+      </label>
+      <input type="email" id="email" placeholder="Introduzca su email" required>
+      <br>
+      <label for="number" id="number-label">
+        Edad (opcional)
+      </label>
+      <input type="number" id="number" placeholder="Introduzca su edad">
+      <br>
+      <label for="dropdown">Que opción describe mejor tu role?</label>
+      <select id="dropdown" name="roles">
+        <option value="" disabled selected>Seleccione una opcion</option>
+        <option value="student">Estudiante</option>
+        <option value="backend-developer">Backend Developer</option>
+        <option value="frontend-developer">Frontend Developer</option>
+        <option value="fullstack-developer">FullStack Developer</option>
+      </select>
+      <br>
+
+      <label for="recommends-container" class="mt-5 mb-5">¿Recomendarias FreeCodeCamp a tus Amigos?</label>
+      <div id="recommends-container">
+        <div>
+          <input type="radio" id="yes" name="recommends" value="yes">
+          <label for="yes">Definitivamente</label>
+        </div>
+        <div>
+          <input type="radio" id="maybe" name="recommends" value="maybe">
+          <label for="maybe">Puede ser</label>
+        </div>
+        <div>
+          <input type="radio" id="not" name="recommends" value="not">
+          <label for="not">Desfinitivamente No</label>
+        </div>
+        <div>
+          <input type="radio" id="not-sure" name="recommends" value="not-sure">
+          <label for="not-sure">No estoy seguro</label>
+        </div>
+
+      </div>
+
+      <br>
+      <label for="feature">¿Cuál es tu característica favorita de FreeCodeCamp?</label>
+      <select id="feature" name="feature">
+        <option value="" disabled selected>Seleccione una opcion</option>
+        <option value="comunity" selected>Comunidad</option>
+        <option value="projects" selected>Proyectos</option>
+        <option value="challenges" selected>Retos</option>
+      </select>
+      <br>
+      <label for="improvements-container" class="mt-5 mb-5">
+        ¿Qué le gustaría ver mejorado?
+      </label>
+      <div id="improvements-container" class="mt-5 mb-5">
+        <div>
+          <input type="checkbox" name="improvements" id="frontend-projects">
+          <label for="frontend-projects">Proyectos Frontend</label>
+        </div>
+        <div>
+          <input type="checkbox" name="improvements" id="backend-projects">
+          <label for="backend-projects">Proyectos Backend</label>
+        </div>
+        <div>
+          <input type="checkbox" name="improvements" id="challenges">
+          <label for="challenges">Retos</label>
+        </div>
+        <div>
+          <input type="checkbox" name="improvements" id="aditional-cource">
+          <label for="aditional-cource">Cursos Adicionales</label>
+        </div>
+        <div>
+          <input type="checkbox" name="improvements" id="open-source-comunity">
+          <label for="open-source-comunity">Comunidad Open Source</label>
+        </div>
+      </div>
+      <br>
+      <label for="comments">¿Cualquier comentario o Sugerencia?</label>
+      <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Introduzca su comentario"></textarea>
+      <br>
+      <input type="submit" value="Enviar" class="btn btn-large">
+    </form>
+  </main>
+</body>
+
+</html>
