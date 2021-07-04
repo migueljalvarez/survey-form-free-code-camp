@@ -29,6 +29,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 
+
 #main {
   color: var(--color-text);
   padding: 1em;
@@ -48,7 +49,7 @@ body {
   flex-direction: column;
   background: var(--color-dark);
   padding: 2em;
-  width: 500px;
+  width: 80%;
   color: var(--color-text);
   margin: auto;
 }
@@ -60,7 +61,6 @@ body {
   padding: 5px;
   font-size: 12pt;
   border-radius: 5px;
-
 }
 #survey-form select {
   padding: 5px;
@@ -70,14 +70,13 @@ body {
 #survey-form input:focus {
   outline-color: var(--color-line);
 }
-#survey-form textarea{
+#survey-form textarea {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-  "Lucida Sans", Arial, sans-serif;
+    "Lucida Sans", Arial, sans-serif;
   padding: 5px;
   font-size: 12pt;
   border-radius: 5px;
 }
-
 
 #recommends-container div {
   margin-top: 5px;
@@ -109,3 +108,8 @@ body {
 .mb-5 {
   margin-bottom: 5px;
 }
+.wrapper {
+  max-width: 1024px;
+  margin: auto;
+}
+
